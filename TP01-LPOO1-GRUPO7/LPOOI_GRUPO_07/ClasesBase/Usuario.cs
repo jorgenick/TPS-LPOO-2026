@@ -5,7 +5,29 @@ using System.Text;
 
 namespace ClasesBase
 {
-    class Usuario
+    public class Usuario
     {
+        public int Usu_ID { get; set; }
+
+        public string Usu_NombreUsuario { get; set; }
+
+        public string Usu_Contrasenia { get; set; }
+
+        public string Usu_ApellidoNombre { get; set; }
+
+        public int Rol_Codigo { get; set; }
+
+
+        public Usuario(int id,string nombre,string contrasenia, string apellido, int codigo)
+        {
+            this.Usu_ID = id;
+            this.Usu_NombreUsuario = nombre;
+            this.Usu_Contrasenia = contrasenia;
+            this.Usu_ApellidoNombre = apellido;
+            this.Rol_Codigo = codigo;
+        }
+
+    
+    
     }
 }
