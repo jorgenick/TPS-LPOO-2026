@@ -9,24 +9,23 @@ using System.Windows.Forms;
 
 namespace Vistas
 {
-    public partial class Principal : Form
+    public partial class AltaCliente : Form
     {
-        public Principal()
+        public AltaCliente()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AltaCliente altaCliente = new AltaCliente();
+            string nombre = txtNombreUsuario.Text;
+            string apellido = txtApellidoUsuario.Text;
+            string dni = txtDniUsuario.Text;
 
-            altaCliente.Show();
+            MessageBox.Show("USUARIO REGISTRADO \n nombre: "+nombre+"\napellido: "+apellido+"\nDNI: "+dni);
+
+
         }
-
-
-
-
-
 
     }
 }
