@@ -18,13 +18,24 @@ namespace Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombreUsuario.Text;
-            string apellido = txtApellidoUsuario.Text;
-            string dni = txtDniUsuario.Text;
+            var salir = MessageBox.Show("desea guardar estos cambios?", "Atencion", MessageBoxButtons.YesNo);
 
-            MessageBox.Show("USUARIO REGISTRADO \n nombre: "+nombre+"\napellido: "+apellido+"\nDNI: "+dni);
+            if (salir == DialogResult.Yes)
+            {
+
+                string nombre = txtNombreUsuario.Text;
+                string apellido = txtApellidoUsuario.Text;
+                string dni = txtDniUsuario.Text;
+
+                MessageBox.Show("USUARIO REGISTRADO \n nombre: " + nombre + "\napellido: " + apellido + "\nDNI: " + dni);
+            }
 
 
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            
         }
 
     }

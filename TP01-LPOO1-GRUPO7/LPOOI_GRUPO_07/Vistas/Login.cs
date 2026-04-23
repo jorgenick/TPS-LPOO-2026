@@ -12,51 +12,65 @@ namespace Vistas
 {
     public partial class Login : Form
     {
+        // instancia de roles
         Roles rol1 = new Roles(1, "Administrador");
         Roles rol2 = new Roles(2, "Operador");
         Roles rol3 = new Roles(3, "Auditor");
 
-        Usuario oUsu = new Usuario(1, "jorge", "123", "tolaba", 2);
-
-
+        // creacion de 3 usuarios para prueba
+        Usuario usu1 = new Usuario(1, "jorge", "123", "tolaba", 1);
+        Usuario usu2 = new Usuario(1, "juan", "123", "toconas", 2);
+        Usuario usu3 = new Usuario(1, "pablo", "123", "perez", 3);
 
         public Login()
         {
             InitializeComponent();
         }
 
+        // boton aceptar
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            string user = txtUsuario.Text;
+            string user = txtUsuario.Text; //asigancion a variables de user y contraseña
             string pass = txtContrasenia.Text;
 
-            if (user == "jorge" && pass == "123")
+
+            //---PUNTO 6---
+            // validacion de nombre y usuario 
+            if (user == usu1.Usu_NombreUsuario && pass == usu1.Usu_Contrasenia)
             {
-                MessageBox.Show("Usuario y contraseña ingresada correctamente!");
+                MessageBox.Show("BIENVENIDO USUARIO ADMINISTRADOR!");
                 Principal principal = new Principal();
-                principal.Show();
+                principal.Show(); //---PUNTO 7---
 
             }
-            else {
+            else if (user == usu2.Usu_NombreUsuario && pass == usu2.Usu_Contrasenia)
+            {
+                MessageBox.Show("BIENVENIDO USUARIO OPERADOR!");
+                Principal principal = new Principal();
+                principal.Show(); //---PUNTO 7---
 
+            }
+            else if (user == usu3.Usu_NombreUsuario && pass == usu3.Usu_Contrasenia)
+            {
+                MessageBox.Show("BIENVENIDO USUARIO AUDITOR!");
+                Principal principal = new Principal();
+                principal.Show(); //---PUNTO 7---
+            }
+
+            else
+            {
                 MessageBox.Show("ERROR AL INGRESAR USUARIO/CONTRASEÑA");
             }
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
             var salir = MessageBox.Show("desea salir?", "Atencion", MessageBoxButtons.YesNo);
-
 
             if (salir == DialogResult.Yes)
             {
                 Application.Exit();
             }
-
         }
-
-
     }
 }

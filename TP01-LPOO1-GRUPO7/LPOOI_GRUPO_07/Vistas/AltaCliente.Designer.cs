@@ -35,7 +35,8 @@
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.txtApellidoUsuario = new System.Windows.Forms.TextBox();
             this.txtDniUsuario = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAltaCliente = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,25 +93,36 @@
             // 
             this.txtDniUsuario.Location = new System.Drawing.Point(103, 158);
             this.txtDniUsuario.Name = "txtDniUsuario";
-            this.txtDniUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtDniUsuario.Size = new System.Drawing.Size(106, 20);
             this.txtDniUsuario.TabIndex = 6;
             // 
-            // button1
+            // btnAltaCliente
             // 
-            this.button1.Location = new System.Drawing.Point(97, 218);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "REGISTRAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAltaCliente.Location = new System.Drawing.Point(103, 226);
+            this.btnAltaCliente.Name = "btnAltaCliente";
+            this.btnAltaCliente.Size = new System.Drawing.Size(106, 23);
+            this.btnAltaCliente.TabIndex = 7;
+            this.btnAltaCliente.Text = "REGISTRAR";
+            this.btnAltaCliente.UseVisualStyleBackColor = true;
+            this.btnAltaCliente.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(6, 12);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 8;
+            this.btnAtras.Text = "ATRAS";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // AltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(283, 292);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAtras);
+            this.Controls.Add(this.btnAltaCliente);
             this.Controls.Add(this.txtDniUsuario);
             this.Controls.Add(this.txtApellidoUsuario);
             this.Controls.Add(this.txtNombreUsuario);
@@ -134,6 +146,7 @@
         private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.TextBox txtApellidoUsuario;
         private System.Windows.Forms.TextBox txtDniUsuario;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAltaCliente;
+        private System.Windows.Forms.Button btnAtras;
     }
 }
