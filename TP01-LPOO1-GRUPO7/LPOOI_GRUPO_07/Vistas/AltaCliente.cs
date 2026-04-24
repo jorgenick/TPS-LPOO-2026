@@ -26,17 +26,25 @@ namespace Vistas
                 string nombre = txtNombreUsuario.Text;
                 string apellido = txtApellidoUsuario.Text;
                 string dni = txtDniUsuario.Text;
+                string direccion = txtDireccion.Text;
+                string cuit = txtCuit.Text;
+                string nCarnet = txtCarnet.Text;
 
-                MessageBox.Show("USUARIO REGISTRADO \n nombre: " + nombre + "\napellido: " + apellido + "\nDNI: " + dni);
+                MessageBox.Show("USUARIO REGISTRADO! \nNOMBRE: " + nombre + "\nAPELLIDO: " + apellido +
+                    "\nDNI: " + dni + "\nDIRECCION: " + direccion + "\nCUIT: " + cuit
+                     + "\nNº DE CARNET : " + nCarnet);
             }
-
 
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
+
         }
+
+
+
 
     }
 }
