@@ -88,6 +88,7 @@
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtNombreUsuario.TabIndex = 1;
+            this.txtNombreUsuario.TextChanged += new System.EventHandler(this.txtNombreUsuario_TextChanged);
             // 
             // txtApellidoUsuario
             // 
@@ -176,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 444);
+            this.ClientSize = new System.Drawing.Size(313, 444);
             this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCuit);

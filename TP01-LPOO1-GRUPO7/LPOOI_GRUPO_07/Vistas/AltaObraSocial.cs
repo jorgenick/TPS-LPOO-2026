@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Vistas
+{
+    public partial class AltaObraSocial : Form
+    {
+        public AltaObraSocial()
+        {
+            InitializeComponent();
+        }
+
+        private void btnAltaObraSocial_Click(object sender, EventArgs e)
+        {
+            string cuit = txtCIUT.Text;
+            string direccion = txtDireccion.Text;
+            string telefono = txtTelefono.Text;
+            string razonS = txtRazonSocial.Text;
+
+            var save = MessageBox.Show("desea guardar estos cambios?", "Atencion", MessageBoxButtons.YesNo);
+
+            if (save == DialogResult.Yes)
+            {
+
+                MessageBox.Show("CUIT: "+cuit+"\nDIRECCION: "+direccion+"\nRAZON SOCIAL : "+razonS+"\nTELEFONO : "+telefono);
+            }
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

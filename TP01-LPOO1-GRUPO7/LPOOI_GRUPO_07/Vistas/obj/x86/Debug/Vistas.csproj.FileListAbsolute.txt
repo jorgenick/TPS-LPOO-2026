@@ -24,3 +24,5 @@ F:\TP01-LPOO1-GRUPO7\LPOOI_GRUPO_07\Vistas\obj\x86\Debug\Vistas.AltaCliente.reso
 F:\TP01-LPOO1-GRUPO7\LPOOI_GRUPO_07\Vistas\obj\x86\Debug\Vistas.Principal.resources
 F:\TPS-LPOO-2026\TP01-LPOO1-GRUPO7\LPOOI_GRUPO_07\Vistas\obj\x86\Debug\Vistas.AltaCliente.resources
 F:\TPS-LPOO-2026\TP01-LPOO1-GRUPO7\LPOOI_GRUPO_07\Vistas\obj\x86\Debug\Vistas.Principal.resources
+F:\TPS-LPOO-2026\TP01-LPOO1-GRUPO7\LPOOI_GRUPO_07\Vistas\obj\x86\Debug\Vistas.AltaObraSocial.resources
+F:\TPS-LPOO-2026\TP01-LPOO1-GRUPO7\LPOOI_GRUPO_07\Vistas\obj\x86\Debug\Vistas.AltaProducto.resources

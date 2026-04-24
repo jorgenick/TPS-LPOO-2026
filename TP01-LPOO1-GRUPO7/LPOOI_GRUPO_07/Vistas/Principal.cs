@@ -23,6 +23,20 @@ namespace Vistas
             altaCliente.Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            AltaProducto altaProducto = new AltaProducto();
+            altaProducto.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AltaObraSocial altaObraSocial = new AltaObraSocial();
+            altaObraSocial.Show();
+
+        }
+
 
 
     }

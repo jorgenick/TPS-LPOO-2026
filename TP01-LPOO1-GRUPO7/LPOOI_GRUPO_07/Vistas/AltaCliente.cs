@@ -18,9 +18,9 @@ namespace Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var salir = MessageBox.Show("desea guardar estos cambios?", "Atencion", MessageBoxButtons.YesNo);
+            var save = MessageBox.Show("desea guardar estos cambios?", "Atencion", MessageBoxButtons.YesNo);
 
-            if (salir == DialogResult.Yes)
+            if (save == DialogResult.Yes)
             {
 
                 string nombre = txtNombreUsuario.Text;
@@ -40,6 +40,11 @@ namespace Vistas
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
+
+        }
+
+        private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
