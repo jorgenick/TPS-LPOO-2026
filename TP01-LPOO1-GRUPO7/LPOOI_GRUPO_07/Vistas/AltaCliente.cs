@@ -16,10 +16,10 @@ namespace Vistas
             InitializeComponent();
         }
 
+        // Boton Alta Cliente
         private void button1_Click(object sender, EventArgs e)
         {
             var save = MessageBox.Show("desea guardar estos cambios?", "Atencion", MessageBoxButtons.YesNo);
-
             if (save == DialogResult.Yes)
             {
 
@@ -37,19 +37,16 @@ namespace Vistas
 
         }
 
+        // Boton Atras
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
 
         private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
         {
 
         }
-
-
-
 
     }
 }

@@ -16,13 +16,14 @@ namespace Vistas
             InitializeComponent();
         }
 
+        // Boton ALTA CLIENTE
         private void button1_Click(object sender, EventArgs e)
         {
             AltaCliente altaCliente = new AltaCliente();
-
             altaCliente.Show();
         }
 
+        // Boton ALTA PRODUCTO
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -30,14 +31,12 @@ namespace Vistas
             altaProducto.Show();
         }
 
+        // Boton ALTA OBRA SOCIAL
         private void button3_Click(object sender, EventArgs e)
         {
             AltaObraSocial altaObraSocial = new AltaObraSocial();
             altaObraSocial.Show();
 
         }
-
-
-
     }
 }

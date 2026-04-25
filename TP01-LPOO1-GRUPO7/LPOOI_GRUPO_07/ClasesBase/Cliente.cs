@@ -7,6 +7,7 @@ namespace ClasesBase
 {
     class Cliente
     {
+        //atributos
         public string Cli_DNI { get; set; }
         public string Cli_Apellido { get; set; }
         public string Cli_Nombre { get; set; }
@@ -14,16 +15,14 @@ namespace ClasesBase
         public string OS_CUIT { get; set; }
         public string Cli_NroCarnet { get; set; }
 
+        // constructor sobre cargado
         public Cliente(string nombre , string apellido, string dni)
         {
-
             this.Cli_Nombre = nombre;
             this.Cli_Apellido = apellido;
             this.Cli_DNI = dni;
         }
 
     }
-
-
 
 }

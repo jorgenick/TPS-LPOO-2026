@@ -120,7 +120,7 @@
             this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAtras.Location = new System.Drawing.Point(2, 8);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(45, 44);
+            this.btnAtras.Size = new System.Drawing.Size(51, 47);
             this.btnAtras.TabIndex = 8;
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
