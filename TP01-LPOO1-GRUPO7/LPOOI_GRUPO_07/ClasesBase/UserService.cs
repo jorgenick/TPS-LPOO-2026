@@ -8,10 +8,8 @@ namespace ClasesBase
     public class UserService
     {
 
-
         public static Usuario Login(string usuario, string pass)
         {
-
             // instancia de roles
             Roles rol1 = new Roles(1, "Administrador");
             Roles rol2 = new Roles(2, "Operador");
@@ -25,7 +23,6 @@ namespace ClasesBase
             var usuarios = new List<Usuario> { usu1, usu2, usu3 };
 
             return usuarios.FirstOrDefault(u => u.Usu_NombreUsuario == usuario && u.Usu_Contrasenia == pass);
-
         }
 
     }
