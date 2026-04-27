@@ -10,11 +10,6 @@ namespace ClasesBase
 
         public static Usuario Login(string usuario, string pass)
         {
-            // instancia de roles
-            Roles rol1 = new Roles(1, "Administrador");
-            Roles rol2 = new Roles(2, "Operador");
-            Roles rol3 = new Roles(3, "Auditor");
-
             // creacion de 3 usuarios para prueba
             Usuario usu1 = new Usuario(1, "jorge", "123", "tolaba", 1);
             Usuario usu2 = new Usuario(1, "juan", "123", "toconas", 2);

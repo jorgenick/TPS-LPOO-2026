@@ -6,15 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClasesBase;
 
 namespace Vistas
 {
     public partial class Principal : Form
     {
-        public Principal()
+
+        private Usuario usuarioLog;
+
+        public Principal(Usuario usuLogueado)
         {
             InitializeComponent();
+            usuarioLog = usuLogueado;
         }
+
 
         // Boton ALTA CLIENTE
         private void button1_Click(object sender, EventArgs e)
@@ -38,5 +44,16 @@ namespace Vistas
             altaObraSocial.Show();
 
         }
+
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+            etiquetaBienvenida.Text = "HOLA JORGE "+usuarioLog.Usu_ApellidoNombre;
+        }
+
+
+
+
     }
 }

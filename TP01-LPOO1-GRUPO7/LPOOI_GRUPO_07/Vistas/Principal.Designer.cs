@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.etiquetaBienvenida = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,18 +40,18 @@
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // etiquetaBienvenida
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "FORMULARIO PRINCIPAL";
+            this.etiquetaBienvenida.AutoSize = true;
+            this.etiquetaBienvenida.Location = new System.Drawing.Point(153, 49);
+            this.etiquetaBienvenida.Name = "etiquetaBienvenida";
+            this.etiquetaBienvenida.Size = new System.Drawing.Size(137, 13);
+            this.etiquetaBienvenida.TabIndex = 0;
+            this.etiquetaBienvenida.Text = "FORMULARIO PRINCIPAL";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(148, 111);
+            this.button1.Location = new System.Drawing.Point(148, 109);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 23);
             this.button1.TabIndex = 3;
@@ -124,10 +124,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.etiquetaBienvenida);
             this.Controls.Add(this.menuStrip2);
             this.Name = "Principal";
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -137,7 +138,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label etiquetaBienvenida;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -147,5 +148,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.MenuStrip menuStrip2;
 
+
+        public System.EventHandler etiquetaBienvenida_Click { get; set; }
     }
 }
