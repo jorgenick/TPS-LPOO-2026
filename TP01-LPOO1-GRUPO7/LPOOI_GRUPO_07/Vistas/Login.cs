@@ -29,9 +29,11 @@ namespace Vistas
 
             if (u != null)
             {
+                var roler = listaRolex.FirstOrDefault(ro => ro.Rol_Codigo == u.Rol_Codigo);
+
                 MessageBox.Show("BIENVENIDO " + u.Usu_NombreUsuario + 
-                    "\nUSUARIO : " + (listaRolex.FirstOrDefault(ro => ro.Rol_Codigo == u.Rol_Codigo).Rol_Descripcion));
-                Principal home = new Principal(u);
+                    "\nUSUARIO : " + roler.Rol_Descripcion);
+                Principal home = new Principal(u,roler);
                 home.Show();
                 this.Hide();
 

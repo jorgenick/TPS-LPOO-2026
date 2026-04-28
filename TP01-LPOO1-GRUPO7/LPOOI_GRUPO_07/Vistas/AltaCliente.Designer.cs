@@ -106,7 +106,7 @@
             // 
             // btnAltaCliente
             // 
-            this.btnAltaCliente.Location = new System.Drawing.Point(182, 381);
+            this.btnAltaCliente.Location = new System.Drawing.Point(185, 393);
             this.btnAltaCliente.Name = "btnAltaCliente";
             this.btnAltaCliente.Size = new System.Drawing.Size(106, 23);
             this.btnAltaCliente.TabIndex = 7;
@@ -118,7 +118,7 @@
             // 
             this.btnAtras.BackgroundImage = global::Vistas.Properties.Resources._318493;
             this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAtras.Location = new System.Drawing.Point(2, 8);
+            this.btnAtras.Location = new System.Drawing.Point(12, 381);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(51, 47);
             this.btnAtras.TabIndex = 8;

@@ -11,9 +11,9 @@ namespace ClasesBase
         public static Usuario Login(string usuario, string pass)
         {
             // creacion de 3 usuarios para prueba
-            Usuario usu1 = new Usuario(1, "jorge", "123", "tolaba", 1);
-            Usuario usu2 = new Usuario(1, "juan", "123", "toconas", 2);
-            Usuario usu3 = new Usuario(1, "pablo", "123", "perez", 3);
+            Usuario usu1 = new Usuario(1, "jorge", "123", "TOLABA", 1);
+            Usuario usu2 = new Usuario(1, "juan", "123", "TOCONAS", 2);
+            Usuario usu3 = new Usuario(1, "pablo", "123", "PEREZ", 3);
 
             var usuarios = new List<Usuario> { usu1, usu2, usu3 };
 

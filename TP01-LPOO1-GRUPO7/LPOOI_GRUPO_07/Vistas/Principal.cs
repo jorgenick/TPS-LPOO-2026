@@ -14,11 +14,13 @@ namespace Vistas
     {
 
         private Usuario usuarioLog;
+        private Roles rolLog;
 
-        public Principal(Usuario usuLogueado)
+        public Principal(Usuario usuLogueado,Roles rol)
         {
             InitializeComponent();
             usuarioLog = usuLogueado;
+            rolLog = rol;
         }
 
 
@@ -49,11 +51,19 @@ namespace Vistas
         private void Principal_Load(object sender, EventArgs e)
         {
 
-            etiquetaBienvenida.Text = "HOLA JORGE "+usuarioLog.Usu_ApellidoNombre;
+            etiquetaBienvenida.Text = "HOLA " + usuarioLog.Usu_NombreUsuario.ToUpper() + " " + usuarioLog.Usu_ApellidoNombre + "\n\nROL DE USUARIO: " + rolLog.Rol_Descripcion.ToUpper();
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login l = new Login();
+            l.Show();
+        
         }
 
 
-
+         
 
     }
 }
