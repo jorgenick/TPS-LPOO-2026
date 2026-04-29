@@ -1,0 +1,12 @@
+# Carpetas de compilación
+[Bb]in/
+[Oo]bj/
+
+# Configuración de editores
+.vs/
+.vscode/
+
+# Archivos de usuario y temporales
+*.user
+*.suo
+*.db

@@ -37,5 +37,15 @@ namespace Vistas
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("se agrega un boton de prueba1");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Se agrega un boton de prueba 2");
+        }
     }
 }
