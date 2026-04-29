@@ -45,6 +45,7 @@ namespace Vistas
             Console.WriteLine("Se agrega un boton de prueba 2");
             Console.WriteLine("Se agrega un boton de prueba 2");
             Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("se crea otro boton de alta de obra social");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace Vistas
             Console.WriteLine("Se agrega un boton de prueba 2");
             Console.WriteLine("Se agrega un boton de prueba 2");
             Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("botones de alta de obra social ");
 
         }
     }
