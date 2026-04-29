@@ -55,6 +55,16 @@ namespace Vistas
             Console.WriteLine("Se agrega un boton de prueba 2");
             Console.WriteLine("Se agrega un boton de prueba 2");
             Console.WriteLine("botones de alta de obra social ");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("botones de alta de obra social ");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("Se agrega un boton de prueba 2");
+            Console.WriteLine("botones de alta de obra social ");
 
         }
     }
